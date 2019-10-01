@@ -22,6 +22,9 @@
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
     "strictInjectionParameters": true,
-    "enableIvy": false
+    // this oddly named flag, turns on factory shim generation in ngtsc
+    // see: https://github.com/angular/angular/blob/a2e890e4f7d01f0edd1c69ce5be61ef69318d9e4/packages/compiler-cli/test/ngtsc/ngtsc_spec.ts#L2270-L2285
+    "allowEmptyCodegenFiles": true,
+    "enableIvy": true
   }
 }
